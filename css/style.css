@@ -62,7 +62,6 @@ nav .red {
     border: 1px solid red;
 }*/
 
-
 nav select{
     border: 0;
     outline: 0;
@@ -72,7 +71,6 @@ nav select{
     border: 1px solid white;
     border-radius: 7px;
     text-align: center;
-
 }
 
 nav select > option{
@@ -93,8 +91,8 @@ nav button{
     border: 1px solid red;
     border-radius: 7px;
     margin-left: 20px;
+    text-align: center;
 }
-
 
 .header_content{
     position: absolute;
@@ -105,13 +103,10 @@ nav button{
     margin-top: 90px;
 }
 
-
 .header_content h1{
-
     font-size: 60px;
     line-height: 70px;
     font-weight: bolder;
-
 }
 
 .header_content h3{
@@ -169,13 +164,11 @@ nav button{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
     margin-left:80px;
     margin-right: 80px;
     position: relative;
     border: 5px;
     bottom: 70px;
-
 }
 
 .ad_img img{
@@ -221,6 +214,11 @@ nav button{
     padding: 50px 0;
 }
 
+.line{
+    width: 100%;
+    border-top: 6px solid #333;
+}
+
 .text_col{
     flex-basis: 50%;
     margin-bottom: 20px;
@@ -243,6 +241,7 @@ nav button{
     width: 600px;
     height: 500px;
 }
+
 
 /*------------faq-------*/
 .faq{
@@ -326,4 +325,63 @@ input[type="radio"]{
 .faq p{
     font-size: 15px;
     padding-top: 30px;
+}
+
+/*-------footer-------*/
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+    padding-bottom: 100px;
+}
+
+.footer h2{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    margin-bottom:10px ;
+}
+
+.footer .col a:hover{
+    text-decoration: underline;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+select{
+    border: 0;
+    outline: 0;
+    color: white;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 7px;
+    text-align: center;
+}
+
+select > option{
+    color: black;
+}
+
+option > img{
+    color: white;
+}
+
+p{
+    padding-top: 20px;
 }
