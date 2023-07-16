@@ -91,7 +91,7 @@ nav button{
     border: 1px solid red;
     border-radius: 7px;
     margin-left: 20px;
-    text-align: center;
+
 }
 
 .header_content{
@@ -212,6 +212,10 @@ nav button{
     align-items: center;
     flex-wrap: wrap;
     padding: 50px 0;
+}
+
+.row:nth-child(2), .row:nth-child(4){
+    flex-direction: column-reverse;
 }
 
 .line{
@@ -383,5 +387,163 @@ option > img{
 }
 
 p{
+    font-size: 20px;
     padding-top: 20px;
+    margin-bottom:10px;
+}
+
+.email_form input{
+    margin: auto 0;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    padding: 15px 30px;
+    background-color: rgba(34, 34, 34, 0.781);
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+}
+
+.email_form button{
+    margin: auto 0;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+/*-----responsividade----*/
+
+
+@media only screen and (max-width:600px){
+    .logo {
+        width: 110px;
+        height: 30px;
+    }
+
+    nav{
+        display: flex;
+    }
+
+    nav select{
+        max-width: 50px;
+        height: 40px;
+    }
+
+    nav button{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header_content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+
+    }
+
+    .header_content h1{
+        
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .header_content h3{
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .header_content p{
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .header_content button{
+        height: 55px; 
+    }
+
+    .header_content button p{
+        font-size: 18px;
+    }
+
+    .header_ad .ad{
+        display: none;
+    }
+
+    .header_content .email {
+        display: block;
+    }
+
+    .email input{
+        margin: auto 0;
+    }
+
+    .email button{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        min-width: 100px;
+        height: 40px;
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text_col h2{
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .text_col p{
+        width: 100%;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .img_col img{
+        width: 400px;
+        height: 300px;
+    }
+
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+
+    .features .row{
+        padding: 10px 0px;
+        
+    }
+
+    .faq h2{
+        font-size: 30px;
+
+    }
+
+    .accordion{
+        text-align: left;
+    }
+
+    .email_form input{
+        margin-left: 20px;
+    }
+
+    .email_form button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 }
